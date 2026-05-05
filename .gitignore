@@ -1,0 +1,76 @@
+<<<<<<< HEAD
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+=======
+# environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# build output
+dist/
+build/
+
+# logs
+*.log
+npm-debug.log*
+>>>>>>> 1489034adf2830a42e960351c946c7938aa0ff59
+
+# IDE
+.vscode/
+.idea/
+*.swp
+<<<<<<< HEAD
+*~
+
+# logs
+*.log
+
+# build logs
+build-*.txt
+setup-log.txt
+=======
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+>>>>>>> 1489034adf2830a42e960351c946c7938aa0ff59

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 38 92% 50%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 160 84% 39%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 160 84% 39%;
+    
+    /* Islamic Theme Colors */
+    --islamic-green: 160 84% 39%;
+    --islamic-gold: 38 92% 50%;
+    --islamic-sky: 199 89% 48%;
+    --islamic-teal: 174 84% 29%;
+    --islamic-coral: 24 95% 53%;
+    --islamic-lavender: 258 90% 66%;
+    --islamic-dark: 222 47% 11%;
+    --islamic-cream: 48 100% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .gradient-islamic {
+    background: linear-gradient(135deg, #10B981 0%, #0EA5E9 50%, #F59E0B 100%);
+  }
+  
+  .gradient-gold {
+    background: linear-gradient(135deg, #F59E0B 0%, #F97316 100%);
+  }
+  
+  .gradient-green {
+    background: linear-gradient(135deg, #10B981 0%, #0D9488 100%);
+  }
+  
+  .gradient-cream {
+    background: linear-gradient(180deg, #FEF9E7 0%, #FEF3C7 100%);
+  }
+  
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .card-hover:hover {
+    @apply -translate-y-2 shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-emerald-500 text-white font-medium rounded-xl transition-all duration-200;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-emerald-600 shadow-lg -translate-y-0.5;
+  }
+  
+  .btn-gold {
+    @apply px-6 py-3 bg-amber-500 text-white font-medium rounded-xl transition-all duration-200;
+  }
+  
+  .btn-gold:hover {
+    @apply bg-amber-600 shadow-lg -translate-y-0.5;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+}
